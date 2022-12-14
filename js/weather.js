@@ -1,4 +1,4 @@
-const API_KEY = "d6f0bd3f1e5c0925e679503733041701";
+const API_KEY = "d6f0d3f1e50925e679503733041701";
 /// This is fake API_KEY. No wonder it doesn't work. /// 
 
 function geoSuccess(position){
