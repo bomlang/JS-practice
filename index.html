@@ -1,40 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,600&family=Nunito:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>To-do List</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
+  <body>
+       
 
-<body>
+    <main id="Box">
+      <section id="sideBox">
+        <h1 class="title">To-do List</h1>
+        <div class="user">
+        <form class="login-form hidden">
+            <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+          id="name"
+        />
+        <button class="loginBtn" type="submit" value="Log In">Login
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
+        </form>
+          <div id="greet-username" class="hidden"></div>
+        </div>
 
-    <form class="login-form hidden">
-        <input required maxlength="15" type="text" placeholder="what is your name?" />
-        <input type="submit" value="Log In" />
-    </form>
+   
+        <div class="time">
+            <img class="timeImg"
+              src="https://i.pinimg.com/736x/88/c8/f8/88c8f882edf3b48ea4788dfc517c73e9.jpg"
+              alt="kawaii marin"
+            />
+            <span>Time</span>
+        </div>
+        <div id="clock">
+            <h2>00:00</h2>
+        </div>
+        <div class="weatherTitle" >
+            <img class="weatherImg"src="https://i.pinimg.com/564x/64/99/c8/6499c80cf33356ae83ff87d6b465d9ac.jpg" alt="marin">
+            <span>weather</span>
+        </div>
+          <div id="weather">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
 
-    <h1 id="greet-username" class="hidden"></h1>
-    <h2 id="clock">00:00</h2>
+      <section id="mainBox">
+        <div class="todo">
+          <form id="todo-form">
+            <input
+            class="todoInput"
+              type="text"
+              placeholder="Write To-do "
+              required
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
 
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-
-    <div id="quotes">
-        <span class="quote"></span>
-        <p>
-        <span class="author"></span>
-    </div>
-
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
-
+        <div id="quotes">
+          <span class="quote"></span>
+          <p>
+            <span class="author"></span>
+          </p>
+        </div>
+      </section>
+    </main>
 
     <script src="js/weather.js"></script>
     <script src="js/todo.js"></script>
@@ -42,7 +86,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
-
-</body>
-
+    <script src="https://kit.fontawesome.com/ff3ac3b62b.js" crossorigin="anonymous"></script>
+  </body>
 </html>
